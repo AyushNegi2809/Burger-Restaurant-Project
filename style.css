@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background-image: linear-gradient(101deg, rgba(238, 238, 238, 0.05) 0%, rgba(238, 238, 238, 0.05) 2%, rgba(129, 129, 129, 0.05) 2%, rgba(129, 129, 129, 0.05) 27%, rgba(185, 185, 185, 0.05) 27%, rgba(185, 185, 185, 0.05) 66%, rgba(83, 83, 83, 0.05) 66%, rgba(83, 83, 83, 0.05) 100%), linear-gradient(410deg, rgba(240, 240, 240, 0.05) 0%, rgba(240, 240, 240, 0.05) 13%, rgba(231, 231, 231, 0.05) 13%, rgba(231, 231, 231, 0.05) 34%, rgba(139, 139, 139, 0.05) 34%, rgba(139, 139, 139, 0.05) 71%, rgba(112, 112, 112, 0.05) 71%, rgba(112, 112, 112, 0.05) 100%), linear-gradient(325deg, rgba(189, 189, 189, 0.05) 0%, rgba(189, 189, 189, 0.05) 47%, rgba(16, 7, 7, 0.05) 47%, rgba(16, 7, 7, 0.05) 58%, rgba(108, 108, 108, 0.05) 58%, rgba(108, 108, 108, 0.05) 85%, rgba(143, 143, 143, 0.05) 85%, rgba(143, 143, 143, 0.05) 100%), linear-gradient(185deg, rgba(53, 53, 53, 0.05) 0%, rgba(53, 53, 53, 0.05) 53%, rgb(0, 0, 0) 53%, rgb(0, 0, 0) 82%, rgba(77, 77, 77, 0.05) 82%, rgba(77, 77, 77, 0.05) 98%, rgba(100, 89, 89, 0.21) 98%, rgba(100, 89, 89, 0.21) 100%), linear-gradient(423deg, hsl(247, 0%, 2%), hsl(247, 0%, 2%));
+    height: 450px;
+}
+
+.header-container-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MAIN LOGO */
+.main-logo-image {
+    height: 65px;
+    width: 60px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+/* NAVIGATION BAR */
+nav {
+    margin-right: 90px;
+    display: flex; 
+}
+
+.navigation_hover {
+    display: inline; /* Allow positioning of the pseudo-element */
+    position: relative; /* Set position for absolute positioning of ::after */
+    text-decoration: none; /* Remove default underline */
+    color: rgb(255, 255, 255); /* Set text color */
+    margin: 25px;
+    transition: all 100ms;
+}
+
+.navigation_hover:hover {
+    transform: skew(-9deg) scale(1.15);
+}
+
+/* HEADER CONTENT PART */
+.header-content {
+    margin-left: 20px;
+}
+
+/* MAIN BIG CONTENT OF HEADER */
+.main-content {
+    font-size: 55px;
+    font-family: OCR A Extended;
+    letter-spacing: 2px;
+    display: inline;
+    color: white;
+}
+
+/* MAIN SMALL CONTENT OF HEADER */
+.main-content-small {
+    font-size: 18px;
+    font-family: Avenir Next LT Pro Light;
+    letter-spacing: 1.2px;
+    line-height: 18px;
+    color: rgb(238, 226, 226);
+}
+
+/* HEADER BUTTON */
+button {
+    position: relative;
+    margin: 0;
+    padding: 15px 65px;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+/* HEADER BUTTON */
+button span {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Humnst777 Blk BT;
+    letter-spacing: 1.5px;
+}
+
+/* HEADER BUTTON */
+button:hover {
+    animation: rotate624 0.7s ease-in-out both;
+}
+
+/* HEADER BUTTON */
+button:hover span {
+    animation: storm1261 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+/* HEADER BUTTON ANIMATION */
+@keyframes rotate624 {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(5deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-2deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+}
+
+/* HEADER BUTTON ANIMATION */
+@keyframes storm1261 {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
+
+/* HEADER BUTTON */
+.btn-shine {
+    overflow: hidden;
+    position: relative;
+}
+
+/* HEADER BUTTON */
+.btn-shine span {
+    z-index: 20;
+}
+
+/* HEADER BUTTON */
+.btn-shine:after {
+    background: #ffffff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+
+/* HEADER BUTTON */
+.btn-shine:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-shine:active {
+    margin-top: 10px;
+    background: #f30000;
+    border: #f30000;
+}
+
+/* END TO HEADER BUTTON */
+/* END OF HEADER SECTION */
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* STARTING OF AUR CHEF SECTION */
+.our-chef-container {
+    width: 100%;
+    height: 500px;
+    background-image: radial-gradient(circle at 13% 60%, rgba(70, 70, 70, 0.06) 0%, rgba(70, 70, 70, 0.06) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 51% 56%, rgba(44, 44, 44, 0.06) 0%, rgba(44, 44, 44, 0.06) 18%, transparent 18%, transparent 100%), radial-gradient(circle at 97% 87%, rgba(219, 219, 219, 0.06) 0%, rgba(219, 219, 219, 0.06) 60%, transparent 60%, transparent 100%), radial-gradient(circle at 45% 35%, rgba(83, 83, 83, 0.06) 0%, rgba(83, 83, 83, 0.06) 26%, transparent 26%, transparent 100%), radial-gradient(circle at 81% 28%, rgba(215, 215, 215, 0.06) 0%, rgba(215, 215, 215, 0.06) 55%, transparent 55%, transparent 100%), radial-gradient(circle at 95% 15%, rgba(213, 213, 213, 0.06) 0%, rgba(213, 213, 213, 0.06) 52%, transparent 52%, transparent 100%), linear-gradient(295deg, rgb(11, 104, 18), rgb(106, 252, 99));
+}
+
+/* OUR-CHEF-SECTION BIG CONTENT */
+.our-chef-container h1 {
+    text-align: center;
+    font-family: cambria;
+    color: rgb(31, 31, 31);
+    font-size: 60px;
+}
+
+/* OUR-CHEF-SECTION SMALL CONTENT */
+.our-chef-container-content {
+    text-align: center;
+    margin: 0px 280px;
+    color: rgb(31, 31, 31);
+    font-family: calibri;
+}
+
+/* our-chef-section-img-outer-container */
+.our-chef-container-img-outer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* our-chef-section-outer-container-img */
+.our-chef-container-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* our-chef-section-outer-container-images-name */
+.our-chef-container-img-name {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* our-chef-section-outer-container-images-name-position */
+.our-chef-container-img-name-position {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* our-chef-section-outer-container-images-img tag */
+.our-chef-container-img img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: ease-in 0.25s;
+}
+
+/* our-chef-section-outer-container-images-name-p tag */
+.our-chef-container-img-name p {
+    color: rgb(31, 31, 31);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: cambria;
+    letter-spacing: 0.8px;
+}
+
+/* our-chef-section-outer-container-images-name-position-p tag */
+.our-chef-container-img-name-position p {
+    color: rgb(31, 31, 31);
+    margin-top: 5px;
+}
+
+.our-chef-container-img img:hover {
+    transform: scale(1.1);
+}
+
+/* END OF OUR CHEF SECTION */
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* STARTING OF BEST BURGER SECTION */
+/* BEST BURGER SECTION CONTAINER (OR PARENT)*/
+.best-burger-section-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+    background-color: #f30000;
+    gap: 300px;
+}
+
+/* BEST BURGER SECTION CONTAINER IMAGE (OR CHILD #1)*/
+.best-burger-section-image-container {
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+/* BEST BURGER SECTION CONTAINER IMAGE IMG TAG */
+.best-burger-section-image-container-img-tag {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.753);
+}
+
+/* BEST BURGER SECTION CONTAINER CONTENT (OR CHILD #2) */
+.best-burger-section-container-content {
+    margin-right: 80px;
+    margin-top: 150px;
+}
+
+/* BEST BURGER SECTION CONTAINER CONTENT H1 TAG */
+.best-burger-section-container-content h1 {
+    font-size: 50px;
+    font-family: cambria;
+    letter-spacing: 2px;
+    color: snow;
+}
+
+/* BEST BURGER SECTION CONTAINER CONTENT P TAG */
+.best-burger-section-container-content p {
+    font-size: 18px;
+    font-family: cambria;
+    color: rgb(255, 255, 255);
+}
+
+/* BEST BURGER SECTION CONTAINER CONTENT BUTTON */
+.best-burger-section-container-content-button {
+    height: 40px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    color: red;
+    font-size: 16px;
+    font-family: Avenir Next LT Pro Light;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.best-burger-section-container-content-button:hover {
+    background-color: #f30000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+
+}
+.best-burger-section-container-content-button:active {
+    margin-top: 6px;
+    box-shadow: 0px 0px 18px #ffffff;
+}
+
+/* ENDING OF THE BEST BURGER SECTION */
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* STARTING OF THE BIG BURGER SECTION */
+/* BEST BURGER SECTION CONTAINER (OR PARENT)*/
+.big-burger-section-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+    gap: 350px;
+    background-image: radial-gradient(circle at 13% 60%, rgba(70, 70, 70, 0.06) 0%, rgba(70, 70, 70, 0.06) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 51% 56%, rgba(44, 44, 44, 0.06) 0%, rgba(44, 44, 44, 0.06) 18%, transparent 18%, transparent 100%), radial-gradient(circle at 97% 87%, rgba(219, 219, 219, 0.06) 0%, rgba(219, 219, 219, 0.06) 60%, transparent 60%, transparent 100%), radial-gradient(circle at 45% 35%, rgba(83, 83, 83, 0.06) 0%, rgba(83, 83, 83, 0.06) 26%, transparent 26%, transparent 100%), radial-gradient(circle at 81% 28%, rgba(215, 215, 215, 0.06) 0%, rgba(215, 215, 215, 0.06) 55%, transparent 55%, transparent 100%), radial-gradient(circle at 95% 15%, rgba(213, 213, 213, 0.06) 0%, rgba(213, 213, 213, 0.06) 52%, transparent 52%, transparent 100%), linear-gradient(295deg, rgb(11, 104, 18), rgb(106, 252, 99));
+}
+
+/* BIG BURGER SECTION CONTAINER CONTENT (OR CHILD #1) */
+.big-burger-section-container-content {
+    margin-left: 80px;
+    margin-top: 150px;
+}
+
+/* BIG BURGER SECTION IMAGE CONTAINER (OR CHILD #2) */
+.big-burger-section-img-container {
+    margin-right: 80px;
+    margin-top: 100px;
+}
+
+.big-burger-section-container-img-container-img-tag {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.753);
+}
+
+.big-burger-section-container-content h1 {
+    font-size: 50px;
+    font-family: cambria;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+}
+
+.big-burger-section-container-content p {
+    font-size: 18px;
+    font-family: cambria;
+    color: rgb(32, 32, 32);
+}
+
+.big-burger-section-container-content-button {
+    height: 40px;
+    width: 250px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Avenir Next LT Pro Light;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
